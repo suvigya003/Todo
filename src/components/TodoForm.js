@@ -22,7 +22,18 @@ function TodoForm(props) {
     });
     setInput('');
   };
-
+  // var ul = document.getElementById("todos");
+  // var li;
+  // var remove = document.getElementById('delete');
+  // remove.addEventListener('click', removeItem);
+  // function removeItem() {
+  //   li = ul.children;
+  //   for (let i = 0; i < li.length; i++){
+  //     while (li[i]) {
+  //       ul.removeChild(li[i])
+  //     }
+  //   }
+  // };
   return (
     <form onSubmit={handleSubmit} className='todo-form'>
       {props.edit ? (
@@ -51,9 +62,11 @@ function TodoForm(props) {
           />
           <button onClick={handleSubmit} className='todo-button'>
             Add todo
-          </button>
+            </button>
+             
         </>
       )}
+     
     </form>
   );
 }

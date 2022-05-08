@@ -1,14 +1,23 @@
 import React from 'react';
 import './App.css';
 import TodoList from './components/TodoList';
-import footer from './components/Footer';
+import Footer from './components/Footer';
+import Header from './components/Header';
 function App() {
   return (
+    <>
+      <div className="head">
+        <Header title="Todos List"/>
+      </div>
+     
     <div className='todo-app'>
       <TodoList />
-       <footer/>
-    </div>
-   
+      </div>
+
+      <div className="foot">
+<Footer/>
+      </div>
+   </>
   );
 }
 
